@@ -1,5 +1,3 @@
-/* styles.css */
-
 /* Resetting default margin and padding */
 * {
     margin: 0;
@@ -10,19 +8,27 @@
 /* For index.html Page */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* Header background */
 .hero-header {
     position: relative;
     background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?fit=crop&w=1600&q=80');
-    /* غيّرها لرابط الصورة */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 100px 20px;
     color: white;
     z-index: 1;
+    background-attachment: fixed; /* إضافة تأثير بارالاكسا */
+}
+
+.hero-header img {
+  width: 200px;
+  max-width: 100%;
+  height: auto;
 }
 
 .hero-header::before {
@@ -33,8 +39,15 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    /* التعتيم */
     z-index: -1;
+}
+
+.hero-header h1 {
+  font-size: 2.5rem;
+}
+
+.hero-header p.lead {
+  font-size: 1.25rem;
 }
 
 /* Custom button color */
@@ -53,7 +66,6 @@ img.rounded-circle {
     width: 150px;
     height: 150px;
 }
-
 
 /* General Styles */
 .container {
@@ -75,7 +87,6 @@ body {
 main {
     flex: 1;
     padding: 20px;
-
 }
 
 .navbar {
@@ -182,4 +193,48 @@ main {
 
 .social-icons {
     margin-bottom: 10px;
+}
+
+footer .social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .hero-header {
+    padding: 50px 10px;
+  }
+
+  .hero-header h1 {
+    font-size: 2rem;
+  }
+
+  .hero-header p.lead {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .lead-text {
+    font-size: 16px;
+  }
 }
