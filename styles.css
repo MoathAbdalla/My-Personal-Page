@@ -202,46 +202,27 @@ footer .social-icons a {
   transition: color 0.3s ease;
 }
 
-/* === Responsive Design === */
+/* === Responsive Design and Mobile Navigation === */
 @media (max-width: 768px) {
+  /* Hero Section */
   .hero-header {
     padding: 50px 10px;
   }
 
   .hero-header h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .hero-header p.lead {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
+  /* Container */
   .container {
     padding: 10px;
   }
 
-  .navbar-nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .project-card {
-    width: 100%;
-    max-width: 400px;
-  }
-
-  .heading {
-    font-size: 28px;
-  }
-
-  .lead-text {
-    font-size: 16px;
-  }
-}
-
-/* === Responsive Adjustments for Mobile Navigation === */
-@media (max-width: 768px) {
-  /* Make the navbar vertical and full width on small screens */
+  /* Navigation Menu */
   .navbar-nav {
     flex-direction: column;
     align-items: flex-start;
@@ -270,29 +251,29 @@ footer .social-icons a {
     color: #f39c12;
   }
 
-  /* Make header text smaller on mobile */
-  .hero-header h1 {
-    font-size: 1.75rem;
-  }
-
-  .hero-header p.lead {
-    font-size: 0.95rem;
-  }
-
-  /* Adjust button spacing */
+  /* Button adjustments */
   button.btn-primary {
     padding: 10px 20px;
     font-size: 1rem;
   }
 
-  /* Resize profile picture */
+  /* Image */
   img.rounded-circle {
     width: 120px;
     height: 120px;
   }
 
-  /* Adjust container padding */
-  .container {
-    padding: 10px;
+  /* Projects and Text */
+  .project-card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .lead-text {
+    font-size: 16px;
   }
 }
