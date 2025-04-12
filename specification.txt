@@ -1,0 +1,29 @@
+Specification for Project: Homepage
+
+HTML Tags Used (besides <html>, <head>, <body>, and <title>):
+1. <header> - Used to define the top section of the page with a profile picture and heading.
+2. <img> - Used to display the profile picture.
+3. <h1> - Used for the main heading (name).
+4. <p> - Used for the paragraph describing the user’s profession.
+5. <button> - Used for creating the button to trigger the JavaScript greeting.
+6. <nav> - Used for the navigation bar that links to different sections/pages.
+7. <ul> - Used for creating an unordered list for the navigation items.
+8. <li> - Used for each list item within the navigation bar.
+9. <form> - Used for creating the contact form.
+10. <input> - Used for the input fields (name, email, message) in the contact form.
+
+CSS Properties Used:
+1. font-size - Used to set the font size for text elements.
+2. color - Used to define text color.
+3. background-color - Used to set background colors for various elements.
+4. padding - Used for spacing inside elements (e.g., buttons, header).
+5. border-radius - Used to round the corners of elements (e.g., profile picture).
+
+Bootstrap Features Used:
+1. Bootstrap grid system: Used to align and organize the content on the page, including the profile section, navigation, and footer.
+2. Bootstrap button: Used for the "Click to say hi" button with a pre-defined button style.
+3. Bootstrap navbar: Used to create a responsive navigation bar with links to different sections.
+4. Bootstrap icons: Used for adding icons to the social media links in the footer.
+
+JavaScript Usage:
+- A simple JavaScript function (`sayHello()`) is used to trigger an alert greeting when the button is clicked. The JavaScript is embedded in the page to provide interactivity to the user.

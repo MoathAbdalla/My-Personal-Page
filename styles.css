@@ -1,0 +1,179 @@
+/* styles.css */
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* For index.html Page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header background */
+.hero-header {
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?fit=crop&w=1600&q=80');
+    /* غيّرها لرابط الصورة */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    color: white;
+    z-index: 1;
+}
+
+.hero-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* التعتيم */
+    z-index: -1;
+}
+
+/* Custom button color */
+button.btn-primary {
+    background-color: #6610f2;
+    border: none;
+}
+
+/* Hover effect for the button */
+button.btn-primary:hover {
+    background-color: #520dc2;
+}
+
+/* Profile picture size */
+img.rounded-circle {
+    width: 150px;
+    height: 150px;
+}
+
+
+/* General Styles */
+
+/* Make page take full height */
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Push footer to bottom */
+main {
+    flex: 1;
+    padding: 20px;
+
+}
+
+.navbar {
+    padding: 15px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #f39c12;
+}
+
+/* Heading Styles */
+.heading {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 36px;
+}
+
+.lead-text {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+/* Project Cards Layout */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #2c3e50;
+    border-radius: 8px;
+    width: 250px;
+    margin: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.project-details {
+    padding: 15px;
+}
+
+.project-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #f39c12;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #111;
+    color: #ccc;
+    padding: 20px;
+    font-size: 14px;
+    border-top: 1px solid #333;
+    text-align: center;
+}
+
+.footer a {
+    color: #ccc;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #00aced;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
